@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="YouTube.css">
+    <!-- <link rel="stylesheet" href=""> -->
+</head>
+
+<body>
+    <div class="container">
+        <aside>
+            <div class="bars">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="side-icons">
+                <i class="fa-solid fa-house"></i>
+                <p>Home</p>
+            </div>
+            <div class="side-icons">
+                <i class="fa-solid fa-image"></i>
+                <p>Explore</p>
+            </div>
+            <div class="side-icons">
+                <i class="fa-solid fa-instagram"></i>
+                <p>Subscriptions</p>
+            </div>
+            <div class="side-icons">
+                <i class="fa-solid fa-tiktok"></i>
+                <p>Library</p>
+            </div>
+
+        </aside>
+        <div class="main-container">
+            <header>
+                <nav>
+                    <div class="logo">
+                        <h1>Youtube</h1>
+                    </div>
+                    <div class="center-nav">
+                        <div class="search">
+                            <input type="text">
+                            <button>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                        <div class="mic">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                    </div>
+                    <div class="side-nav">
+                        <i class="fa-solid fa-video"></i>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <i class="fa-solid fa-bell"></i>
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                </nav>
+                <div class="tags">
+                    <div class="tag dark">All</div>
+                    <div class="tag light">Mixes</div>
+                    <div class="tag light">Crypto</div>
+                    <div class="tag light">Html</div>
+                    <div class="tag light">CSS</div>
+                    <div class="tag light">JavaScript</div>
+                </div>
+            </header>
+            <main>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="tiger.jpg" alt="tiger">
+                        <div class="avatar-contant">
+                            <div class="avatar">
+                                <!-- <img src="tiger.jpg" alt=""> -->
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+    
+                            <div class="content">
+                                <h3>Puspa Raj Jungle Me Sher</h3>
+                                <p class="chanel-name">Hindi Senema</p>
+                                <div class="content-status">
+                                    <p>10cr views</p>
+                                    <p>1 day ago</p>
+                                </div>
+                            </div>
+                            <div class="dots">
+                                <h3>.</h3>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="card">
+                        <img src="data:image/jpeg;base64,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" alt="tiger">
+                        <div class="avatar-contant">
+                            <div class="avatar">
+                                <!-- <img src="tiger.jpg" alt=""> -->
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+    
+                            <div class="content">
+                                <h3>Puspa Raj Jungle Me Sher</h3>
+                                <p class="chanel-name">Hindi Senema</p>
+                                <div class="content-status">
+                                    <p>10cr views</p>
+                                    <p>1 day ago</p>
+                                </div>
+                            </div>
+                            <div class="dots">
+                                <h3>.</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="tiger.jpg" alt="tiger">
+                        <div class="avatar-contant">
+                            <div class="avatar">
+                                <!-- <img src="tiger.jpg" alt=""> -->
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+    
+                            <div class="content">
+                                <h3>Puspa Raj Jungle Me Sher</h3>
+                                <p class="chanel-name">Hindi Senema</p>
+                                <div class="content-status">
+                                    <p>10cr views</p>
+                                    <p>1 day ago</p>
+                                </div>
+                            </div>
+                            <div class="dots">
+                                <h3>.</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="tiger.jpg" alt="tiger">
+                        <div class="avatar-contant">
+                            <div class="avatar">
+                                <!-- <img src="tiger.jpg" alt=""> -->
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+    
+                            <div class="content">
+                                <h3>Puspa Raj Jungle Me Sher</h3>
+                                <p class="chanel-name">Hindi Senema</p>
+                                <div class="content-status">
+                                    <p>10cr views</p>
+                                    <p>1 day ago</p>
+                                </div>
+                            </div>
+                            <div class="dots">
+                                <h3>.</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="tiger.jpg" alt="tiger">
+                        <div class="avatar-contant">
+                            <div class="avatar">
+                                <!-- <img src="tiger.jpg" alt=""> -->
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+    
+                            <div class="content">
+                                <h3>Puspa Raj Jungle Me Sher</h3>
+                                <p class="chanel-name">Hindi Senema</p>
+                                <div class="content-status">
+                                    <p>10cr views</p>
+                                    <p>1 day ago</p>
+                                </div>
+                            </div>
+                            <div class="dots">
+                                <h3>.</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="tiger.jpg" alt="tiger">
+                        <div class="avatar-contant">
+                            <div class="avatar">
+                                <!-- <img src="tiger.jpg" alt=""> -->
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+    
+                            <div class="content">
+                                <h3>Puspa Raj Jungle Me Sher</h3>
+                                <p class="chanel-name">Hindi Senema</p>
+                                <div class="content-status">
+                                    <p>10cr views</p>
+                                    <p>1 day ago</p>
+                                </div>
+                            </div>
+                            <div class="dots">
+                                <h3>.</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="tiger.jpg" alt="tiger">
+                        <div class="avatar-contant">
+                            <div class="avatar">
+                                <!-- <img src="tiger.jpg" alt=""> -->
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+    
+                            <div class="content">
+                                <h3>Puspa Raj Jungle Me Sher</h3>
+                                <p class="chanel-name">Hindi Senema</p>
+                                <div class="content-status">
+                                    <p>10cr views</p>
+                                    <p>1 day ago</p>
+                                </div>
+                            </div>
+                            <div class="dots">
+                                <h3>.</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="tiger.jpg" alt="tiger">
+                        <div class="avatar-contant">
+                            <div class="avatar">
+                                <!-- <img src="tiger.jpg" alt=""> -->
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+    
+                            <div class="content">
+                                <h3>Puspa Raj Jungle Me Sher</h3>
+                                <p class="chanel-name">Hindi Senema</p>
+                                <div class="content-status">
+                                    <p>10cr views</p>
+                                    <p>1 day ago</p>
+                                </div>
+                            </div>
+                            <div class="dots">
+                                <h3>.</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="tiger.jpg" alt="tiger">
+                        <div class="avatar-contant">
+                            <div class="avatar">
+                                <!-- <img src="tiger.jpg" alt=""> -->
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+    
+                            <div class="content">
+                                <h3>Puspa Raj Jungle Me Sher</h3>
+                                <p class="chanel-name">Hindi Senema</p>
+                                <div class="content-status">
+                                    <p>10cr views</p>
+                                    <p>1 day ago</p>
+                                </div>
+                            </div>
+                            <div class="dots">
+                                <h3>.</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="tiger.jpg" alt="tiger">
+                        <div class="avatar-contant">
+                            <div class="avatar">
+                                <!-- <img src="tiger.jpg" alt=""> -->
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+    
+                            <div class="content">
+                                <h3>Puspa Raj Jungle Me Sher</h3>
+                                <p class="chanel-name">Hindi Senema</p>
+                                <div class="content-status">
+                                    <p>10cr views</p>
+                                    <p>1 day ago</p>
+                                </div>
+                            </div>
+                            <div class="dots">
+                                <h3>.</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="tiger.jpg" alt="tiger">
+                        <div class="avatar-contant">
+                            <div class="avatar">
+                                <!-- <img src="tiger.jpg" alt=""> -->
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+    
+                            <div class="content">
+                                <h3>Puspa Raj Jungle Me Sher</h3>
+                                <p class="chanel-name">Hindi Senema</p>
+                                <div class="content-status">
+                                    <p>10cr views</p>
+                                    <p>1 day ago</p>
+                                </div>
+                            </div>
+                            <div class="dots">
+                                <h3>.</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="tiger.jpg" alt="tiger">
+                        <div class="avatar-contant">
+                            <div class="avatar">
+                                <!-- <img src="tiger.jpg" alt=""> -->
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+    
+                            <div class="content">
+                                <h3>Puspa Raj Jungle Me Sher</h3>
+                                <p class="chanel-name">Hindi Senema</p>
+                                <div class="content-status">
+                                    <p>10cr views</p>
+                                    <p>1 day ago</p>
+                                </div>
+                            </div>
+                            <div class="dots">
+                                <h3>.</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="tiger.jpg" alt="tiger">
+                        <div class="avatar-contant">
+                            <div class="avatar">
+                                <!-- <img src="tiger.jpg" alt=""> -->
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+    
+                            <div class="content">
+                                <h3>Puspa Raj Jungle Me Sher</h3>
+                                <p class="chanel-name">Hindi Senema</p>
+                                <div class="content-status">
+                                    <p>10cr views</p>
+                                    <p>1 day ago</p>
+                                </div>
+                            </div>
+                            <div class="dots">
+                                <h3>.</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>
